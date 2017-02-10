@@ -28,4 +28,15 @@
 	</video>
 </div>
 </body>
+	<script>
+		var v = document.createElement('video');
+		v.play();
+		console.log("fullscreen, without playsinline set: " + v.webkitDisplayingFullscreen);
+		v.pause();
+		v.setAttribute('playsInline', '');
+		v.play();
+		console.log("plays inline? " + v.playsInline);
+		console.log("fullscreen, with playsinline set: " + v.webkitDisplayingFullscreen);
+		v.pause();
+	</script>
 </html>
