@@ -12,7 +12,7 @@
 <h2> big buck bunny plays inline </h2>
 
 <div>
-	<video width="400" height="200" controls="" playsinline="">
+	<video width="600" height="300" controls="" playsinline="">
 		<!-- MP4 must be first for iPad! -->
 		<source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4"><!-- Safari / iOS, IE9 -->
 		<source src="http://clips.vorwaerts-gmbh.de/VfE.webm" type="video/webm"><!-- Chrome10+, Ffx4+, Opera10.6+ -->
@@ -28,4 +28,15 @@
 	</video>
 </div>
 </body>
+	<script>
+		var v = document.createElement('video');
+		v.play();
+		console.log("fullscreen, without playsinline set: " + v.webkitDisplayingFullscreen);
+		v.pause();
+		v.setAttribute('playsInline', '');
+		v.play();
+		console.log("plays inline? " + v.playsInline);
+		console.log("fullscreen, with playsinline set: " + v.webkitDisplayingFullscreen);
+		v.pause();
+	</script>
 </html>
