@@ -20,14 +20,11 @@
 </div>
 </body>
 	<script>
-		var v = document.createElement('video');
-		v.play();
-		console.log("fullscreen, without playsinline set: " + v.webkitDisplayingFullscreen);
-		v.pause();
+		var v = document.createElemeetn('video');
 		v.setAttribute('playsInline', '');
+		v.setAttribute('muted', '');
 		v.play();
-		console.log("plays inline? " + v.playsInline);
-		console.log("fullscreen, with playsinline set: " + v.webkitDisplayingFullscreen);
-		v.pause();
+		alert('can I play inline? ' +  !v.paused());
+		console.log('paused: ' + v.paused());
 	</script>
 </html>
