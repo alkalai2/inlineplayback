@@ -9,7 +9,9 @@ var adTagUrl =
 var contentEndedListener;
 
 // begin
-document.onload = loadAds();
+// document.onload = loadAds();
+var getAdsButton = document.getElementById('button');
+getAdbutton.addEventListener('click', loadAds);
 
 function setup() {
   
