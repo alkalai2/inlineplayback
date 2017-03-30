@@ -22,7 +22,6 @@ function setup() {
   adDisplayContainer.initialize();
   //Re-use this AdsLoader instance for the entire lifecycle of your page.
   adsLoader = new google.ima.AdsLoader(adDisplayContainer);
-  adTagUrl = document.getElementById("adTagInput").value;
   console.log('finished setup of video element, ad container, ads loader, ad tag');
 }
 
