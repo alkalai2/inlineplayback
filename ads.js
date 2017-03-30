@@ -11,7 +11,7 @@ var contentEndedListener;
 // begin
 // document.onload = loadAds();
 var getAdButton = document.getElementById('button');
-getAdbutton.addEventListener('click', loadAds);
+getAdButton.addEventListener('click', loadAds);
 
 function setup() {
   
