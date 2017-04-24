@@ -1,0 +1,15 @@
+<html>
+<body>
+<video id='vid' controls muted='' playsInline=''>
+  <source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
+</video>
+<script>
+  var vid = document.getElementById('vid');
+  if(vid.requestFUllscreen) {
+    vid.requestFullScreen();
+  } else {
+    alert('cannot fullscreen');
+  }
+</script>
+</body>
+</html>
