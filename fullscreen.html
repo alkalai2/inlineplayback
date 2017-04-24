@@ -5,11 +5,10 @@
 </video>
 <script>
   var vid = document.getElementById('vid');
-  if(vid.requestFUllscreen) {
-    vid.requestFullScreen();
-  } else {
-    alert('cannot fullscreen');
-  }
+  setTimeout(function(){
+    vid.webkitRequestFullscreen();
+  }, 2000);
+
 </script>
 </body>
 </html>
